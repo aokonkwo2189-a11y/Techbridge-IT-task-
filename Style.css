@@ -1,0 +1,836 @@
+/* =====================================================
+   TECHBRIDGE WEB DEVELOPMENT INTERNSHIP
+   TASK 1 - HOMEPAGE
+   ===================================================== */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07110f;
+    color: #f4f7f6;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ================= COLORS ================= */
+
+:root {
+    --green: #39d98a;
+    --green-dark: #20ad69;
+    --blue: #1769aa;
+    --dark: #07110f;
+    --dark-2: #0c1916;
+    --card: #10211c;
+    --light: #f4f7f6;
+    --muted: #aab9b4;
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+
+/* ================= GENERAL ================= */
+
+.section {
+    padding: 100px 8%;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.section-heading.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-label {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.15;
+}
+
+h2 {
+    font-size: clamp(35px, 5vw, 60px);
+    margin-bottom: 20px;
+}
+
+h2 span,
+h1 span {
+    color: var(--green);
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+}
+
+
+/* ================= NAVBAR ================= */
+
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7, 17, 15, 0.95);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    min-height: 80px;
+    width: 84%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo img {
+    width: 150px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #dce7e3;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+.nav-button {
+    background: var(--green);
+    color: #06110d;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* ================= BUTTONS ================= */
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: var(--green);
+    color: #06110d;
+}
+
+.primary-button:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.secondary-button:hover {
+    background: var(--green);
+    color: #06110d;
+    transform: translateY(-3px);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    padding: 90px 8%;
+
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 70px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(57, 217, 138, 0.12),
+            transparent 35%
+        ),
+        var(--dark);
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.hero-label {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 78px);
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 600px;
+    color: var(--muted);
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-card {
+    width: min(430px, 100%);
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.35),
+        0 0 50px rgba(57, 217, 138, 0.08);
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    background: var(--dark-2);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.about-text {
+    color: var(--muted);
+    font-size: 17px;
+    padding: 25px 0;
+}
+
+.about-text p + p {
+    margin-top: 20px;
+}
+
+.about-card {
+    background: var(--card);
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(57, 217, 138, 0.5);
+}
+
+.card-icon {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: var(--muted);
+}
+
+
+/* ================= PROGRAMS ================= */
+
+.programs {
+    background: var(--dark);
+}
+
+.program-grid {
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.program-card {
+    position: relative;
+    padding: 40px;
+    min-height: 330px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(57, 217, 138, 0.55);
+}
+
+.program-card.featured {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(57, 217, 138, 0.13),
+            rgba(23, 105, 170, 0.08)
+        ),
+        var(--card);
+}
+
+.program-number {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.program-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(57, 217, 138, 0.1);
+    color: var(--green);
+
+    border-radius: 12px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+.program-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.program-card p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.card-link {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* ================= INTERNSHIP ================= */
+
+.internship {
+    background: var(--dark-2);
+}
+
+.internship-box {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    padding: 65px;
+
+    border: 1px solid var(--border);
+    border-radius: 25px;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(57, 217, 138, 0.13),
+            transparent 35%
+        ),
+        var(--card);
+}
+
+.internship-content h2 {
+    font-size: clamp(38px, 5vw, 60px);
+}
+
+.internship-content > p:not(.section-label) {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.internship-content .primary-button {
+    margin-top: 15px;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.benefit > span {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.benefit h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.benefit p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ================= WHY ================= */
+
+.why {
+    background: var(--dark);
+}
+
+.why-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    padding: 35px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+}
+
+.why-card > span {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.why-card h3 {
+    margin: 25px 0 12px;
+    font-size: 23px;
+}
+
+.why-card p {
+    color: var(--muted);
+}
+
+
+/* ================= APPLICATION ================= */
+
+.apply {
+    background: var(--dark-2);
+}
+
+.apply-box {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(57, 217, 138, 0.13),
+            rgba(23, 105, 170, 0.1)
+        );
+
+    border: 1px solid rgba(57, 217, 138, 0.25);
+    border-radius: 22px;
+}
+
+.apply-box h2 {
+    max-width: 650px;
+}
+
+.apply-box p:not(.section-label) {
+    max-width: 650px;
+    color: var(--muted);
+}
+
+.apply-action {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.small-note {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+/* ================= COMMUNITY ================= */
+
+.community {
+    background: var(--dark);
+    text-align: center;
+}
+
+.community-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.community-content p:not(.section-label) {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: var(--dark-2);
+}
+
+.contact-box {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 50px;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+}
+
+.email-link {
+    color: var(--green);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #040a08;
+    padding: 50px 8% 25px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+.footer-brand img {
+    width: 145px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-links a {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #74817d;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        width: 90%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .internship-box {
+        grid-template-columns: 1fr;
+        padding: 45px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apply-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .section {
+        padding: 70px 6%;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .navbar {
+        width: 90%;
+        padding: 15px 0;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 6%;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .program-card {
+        min-height: auto;
+    }
+
+    .internship-box {
+        padding: 30px 22px;
+    }
+
+    .apply-box {
+        padding: 35px 25px;
+    }
+
+    .contact-box {
+        padding: 35px 20px;
+    }
+
+    .email-link {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+}

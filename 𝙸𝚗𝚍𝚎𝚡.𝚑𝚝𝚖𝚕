@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechBridge | Bridging Learning to Real-World Experience</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <img src="images/techbridge-logo.png" alt="TechBridge Logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#internship">Internship</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#apply" class="nav-button">Apply Now</a>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-label">TECHBRIDGE BY BASELINK SERVICES LIMITED</p>
+
+                <h1>
+                    Bridging Learning to
+                    <span>Real-World Experience</span>
+                </h1>
+
+                <p class="hero-text">
+                    TechBridge helps learners develop practical technology
+                    skills through hands-on learning and real-world projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#programs" class="primary-button">
+                        Explore Programs
+                    </a>
+
+                    <a href="#apply" class="secondary-button">
+                        Apply for Internship
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="image-card">
+                    <img
+                        src="images/techbridge-logo.png"
+                        alt="TechBridge"
+                    >
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="about section" id="about">
+
+            <div class="section-heading">
+
+                <p class="section-label">ABOUT TECHBRIDGE</p>
+
+                <h2>
+                    Learn skills. Build experience.
+                    <span>Prepare for the real world.</span>
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        TechBridge by Baselink Services Limited is focused on
+                        helping learners connect their learning with practical,
+                        real-world experience.
+                    </p>
+
+                    <p>
+                        Through technology-focused programs and practical
+                        learning opportunities, participants can develop
+                        useful skills and gain experience by working on
+                        projects.
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <div class="card-icon">01</div>
+
+                    <h3>Practical Learning</h3>
+
+                    <p>
+                        Develop technology skills through practical,
+                        project-based learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROGRAMS SECTION ================= -->
+
+        <section class="programs section" id="programs">
+
+            <div class="section-heading center">
+
+                <p class="section-label">CURRENT PROGRAMS</p>
+
+                <h2>
+                    Choose your path and
+                    <span>start building.</span>
+                </h2>
+
+                <p>
+                    Explore the current TechBridge programs designed to help
+                    learners develop practical technology skills.
+                </p>
+
+            </div>
+
+
+            <div class="program-grid">
+
+                <!-- DATA ANALYTICS -->
+
+                <article class="program-card">
+
+                    <div class="program-number">01</div>
+
+                    <div class="program-icon">
+                        ◈
+                    </div>
+
+                    <h3>Data Analytics</h3>
+
+                    <p>
+                        Build practical data analytics skills and learn how
+                        technology can be used to understand and work with
+                        data.
+                    </p>
+
+                    <a href="#apply" class="card-link">
+                        Explore Program →
+                    </a>
+
+                </article>
+
+
+                <!-- WEB DEVELOPMENT -->
+
+                <article class="program-card featured">
+
+                    <div class="program-number">02</div>
+
+                    <div class="program-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Learn the foundations of creating websites and develop
+                        practical web development skills through hands-on
+                        projects.
+                    </p>
+
+                    <a href="#apply" class="card-link">
+                        Explore Program →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTERNSHIP SECTION ================= -->
+
+        <section class="internship section" id="internship">
+
+            <div class="internship-box">
+
+                <div class="internship-content">
+
+                    <p class="section-label">THE OPPORTUNITY</p>
+
+                    <h2>
+                        30-Day Practical
+                        <span>Internship</span>
+                    </h2>
+
+                    <p>
+                        The TechBridge internship gives participants an
+                        opportunity to gain practical experience through
+                        project-based learning.
+                    </p>
+
+                    <p>
+                        Successful participation and performance may also
+                        qualify participants for a recommendation letter.
+                    </p>
+
+                    <a href="#apply" class="primary-button">
+                        Start Your Application
+                    </a>
+
+                </div>
+
+
+                <div class="benefits">
+
+                    <div class="benefit">
+                        <span>01</span>
+                        <div>
+                            <h3>30 Days</h3>
+                            <p>Practical internship experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span>02</span>
+                        <div>
+                            <h3>Project-Based</h3>
+                            <p>Learn through practical projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span>03</span>
+                        <div>
+                            <h3>Recommendation</h3>
+                            <p>
+                                Possibility of a recommendation letter based
+                                on successful participation and performance.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY TECHBRIDGE ================= -->
+
+        <section class="why section">
+
+            <div class="section-heading center">
+
+                <p class="section-label">WHY TECHBRIDGE</p>
+
+                <h2>
+                    Turn learning into
+                    <span>experience.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="why-grid">
+
+                <div class="why-card">
+                    <span>01</span>
+                    <h3>Practical Skills</h3>
+                    <p>
+                        Focus on developing useful technology skills through
+                        practical learning.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <span>02</span>
+                    <h3>Real-World Experience</h3>
+                    <p>
+                        Gain experience by applying what you learn to
+                        practical projects.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <span>03</span>
+                    <h3>Learning Community</h3>
+                    <p>
+                        Connect with other learners through the TechBridge
+                        community.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APPLICATION SECTION ================= -->
+
+        <section class="apply section" id="apply">
+
+            <div class="apply-box">
+
+                <div>
+
+                    <p class="section-label">READY TO BEGIN?</p>
+
+                    <h2>
+                        Take the next step
+                        <span>with TechBridge.</span>
+                    </h2>
+
+                    <p>
+                        Apply for the TechBridge 30-Day Practical Internship
+                        and begin your journey toward practical experience.
+                    </p>
+
+                </div>
+
+                <div class="apply-action">
+
+                    <!-- Replace # with the official TechBridge application
+                         form URL when you receive it. -->
+
+                    <a href="#" class="primary-button">
+                        Apply for Internship
+                    </a>
+
+                    <p class="small-note">
+                        TechBridge Internship Application Form
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMMUNITY ================= -->
+
+        <section class="community section" id="community">
+
+            <div class="community-content">
+
+                <p class="section-label">JOIN THE COMMUNITY</p>
+
+                <h2>
+                    Stay connected with
+                    <span>TechBridge.</span>
+                </h2>
+
+                <p>
+                    Join the TechBridge WhatsApp Community and stay connected
+                    with the learning community.
+                </p>
+
+                <!-- Replace # with the official TechBridge WhatsApp
+                     community link when you receive it. -->
+
+                <a href="#" class="secondary-button">
+                    Join WhatsApp Community
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact section" id="contact">
+
+            <div class="contact-box">
+
+                <div>
+
+                    <p class="section-label">CONTACT TECHBRIDGE</p>
+
+                    <h2>
+                        Have questions?
+                        <span>Get in touch.</span>
+                    </h2>
+
+                </div>
+
+                <a
+                    href="mailto:techbridgebaslink@gmail.com"
+                    class="email-link"
+                >
+                    techbridgebaslink@gmail.com
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <img
+                    src="images/techbridge-logo.png"
+                    alt="TechBridge Logo"
+                >
+
+                <p>
+                    Bridging Learning to Real-World Experience
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#internship">Internship</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TechBridge by Baselink Services Limited.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>.
+
+
