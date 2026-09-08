@@ -834,3 +834,70 @@ h1 span {
     }
 
 }
+
+/* ================= TASK 2 ADDITIONAL STYLES ================= */
+
+.hero-small {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.programs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.program-detail-card {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.featured-track {
+    border: 2px solid #0056b3;
+}
+
+.badge {
+    background: #e1f0ff;
+    color: #0056b3;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.program-focus {
+    color: #555;
+    margin-top: 10px;
+}
+
+.skills-list {
+    margin: 15px 0 25px 20px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
+.apply-cta {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    margin-top: 40px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
