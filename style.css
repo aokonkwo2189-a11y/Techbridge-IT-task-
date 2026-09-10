@@ -901,3 +901,171 @@ h1 span {
     font-weight: bold;
 }
 
+/* ================= TASK 3 ADDITIONAL STYLES ================= */
+
+.tasks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.task-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task- card{
+    border: 2px solid #0056b3;
+    background: #f8fa280d;
+}
+
+.task-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.day-badge {
+    background: #0056b3;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.level-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.beginner { background: #e6fffa; color: #047857; }
+.intermediate { background: #fef3c7; color: #b45309; }
+.advanced { background: #fee2e2; color: #b91c1c; }
+
+.task-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.task-card p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;    
+}
+
+/* REMODIFIED APPLY NOW PILL-SHAPED CONTAINER */
+/* Apply Section Container (Transparent / Centered) */
+.apply-section {
+    background: transparent; /* Removes white background */
+    box-shadow: none;
+    padding: 0;
+    margin: 35px auto 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+
+/* Larger Pill-Shaped Button */
+.apply-btn {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px; /* Fully rounded pill shape */
+    padding: 16px 36px;  /* Bigger size */
+    font-size: 16px;     /* Larger readable text */
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3); /* Subtle green glow */
+    transition: all 0.2s ease;
+}
+
+.apply-btn:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+}
+
+.apply-btn:active {
+    transform: translateY(0);
+}
+
+/* Return Link Styling */
+.return-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.return-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 11px;
+    color: #8b949e;
+}
+   
+ /* 1. techbridge Logo Styling */
+.logo-img {
+    height: 12px; /* Increased size for visibility */
+    width: 8px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 5px;
+    font-weight: 10;
+}
+
+/* 2. Task Card Header Alignment (Pushes badge to far right) */
+.task-header {
+    display: flex;
+    justify-content: space-between; /* Pushes Day to right, Advanced to left */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+/* Optional badge cleanup */
+.level-badge.advanced {
+    margin-left: auto; /* Ensures it sticks to the right side */
+    background-color: #fce8e6;
+    color: #c5221f;
+}
+
+/* 3. Centered Footer Copyright */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #8b949e;
+    text-align: center;
+    margin: 0 auto;
+}
+  
